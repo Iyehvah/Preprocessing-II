@@ -1,9 +1,18 @@
 .home {
+  @media @mobile{
+    max-width: 500px;
+  }
   header{
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      width: 90%;
+      margin: 0 auto;
+    }
+
   }
   .header-img{
     padding-bottom: 10px;
+    width: 100%;
   }
 
   .content-section {
@@ -11,17 +20,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @mobile{
+      width:90%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      
+    }
+
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 90%;
+        margin-top: 15px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 90%;
+        margin-bottom: 20px;
+      }
 
       img {
         border-radius: 10px;
@@ -32,6 +58,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -47,6 +77,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width: 90%;
+      padding-top: 20px;
+    }
 
     img {
       border-radius: 10px;
@@ -54,24 +88,43 @@
   }
 
   .content-pick {
+    width: 100%;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 80%;
+        margin: 0 auto;
+      }
     }
     .btn {
-      .button(teal, white)
+      .button(teal, white);
+      @media @mobile{
+        margin-bottom: 20px;
+        background-color: teal;
+      }
+
     }
   }
 }// home
 
 .img-border{
   border-top: 2px dashed @navigation-border;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+  @media @mobile{
+    width: 100%;
+    margin-top: 10px;
+  }
 }

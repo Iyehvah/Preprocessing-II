@@ -1,17 +1,30 @@
 // Navigation Styles here
 
-nav{
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
 
-    a{
+.nav-div{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    @media @mobile{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+    }   
+ }
+
+    a {
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
+        padding: 15px;
+
     }
-}
+
+
+
